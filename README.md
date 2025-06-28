@@ -46,6 +46,36 @@ Designs the visual layout and user flow. Ensures that the app looks appealing, i
 ### 📋 Project Manager
 Oversees project timelines, team coordination, and task prioritization. Ensures that the team meets deadlines, communicates effectively, and aligns with the project’s goals and milestones.
 
+## 🧰 Technology Stack
+
+The project uses a modern, scalable stack to build a responsive, full-featured Airbnb clone. Each technology plays a vital role in the application’s architecture and performance.
+
+### 🐍 Django
+A high-level Python web framework used for building robust backend systems. Django helps create secure, maintainable RESTful APIs and handles core functions like user authentication, routing, and admin interfaces.
+
+### 🐘 PostgreSQL
+An open-source, powerful relational database used to store structured data such as users, properties, bookings, and reviews. It supports complex queries, indexing, and relationships between data models.
+
+### ⚛️ React
+A JavaScript library for building dynamic and responsive user interfaces. React allows us to create reusable components, manage application state, and deliver a smooth front-end experience.
+
+### 🌐 GraphQL
+An API query language used to fetch and manipulate data more efficiently than traditional REST. It enables clients to request exactly the data they need, minimizing overfetching or underfetching.
+
+### 🔐 JWT (JSON Web Tokens)
+Used for secure user authentication and authorization. JWTs are issued upon login and allow users to interact with protected routes and features without exposing sensitive information.
+
+### 🧪 Pytest / Jest
+Testing frameworks used for backend and frontend testing respectively. They help catch bugs early, automate test cases, and ensure code reliability.
+
+### ☁️ Heroku / Render
+Cloud platforms for deploying and hosting the application. They enable continuous deployment and scalability, allowing the application to run in real-world environments.
+
+### 🧰 Docker
+Used to containerize the application, ensuring consistency across development and production environments. It simplifies deployment and dependency management.
+
+
+
 
 
 
