@@ -163,6 +163,49 @@ Handles the transaction records for completed bookings.
 - One **Property** → Many **Bookings**, **Reviews**
 - One **Booking** → One **Payment**
 
+## 🧩 Feature Breakdown
+
+The Airbnb Clone project is structured around core features that replicate the user experience of the real Airbnb platform. Each feature adds critical functionality for a seamless, user-friendly accommodation booking system.
+
+---
+
+### 👥 User Management
+Users can sign up, log in, and manage their profiles securely. The system distinguishes between guests and hosts, allowing users to switch roles if needed and access the appropriate dashboards.
+
+---
+
+### 🏠 Property Management
+Hosts can list properties by providing details such as title, description, price, images, and location. They can update or delete listings and manage availability to reflect real-world offerings.
+
+---
+
+### 📅 Booking System
+Guests can book available properties for specific date ranges, and the system automatically calculates the total price. The booking system also prevents overlapping reservations and provides confirmation notifications.
+
+---
+
+### 💳 Payment Integration
+Secure payment processing is implemented to handle transactions for bookings. Users can pay using credit cards or other supported methods, and payment status is tracked for each booking.
+
+---
+
+### ⭐ Review and Rating System
+Guests can leave reviews and ratings after their stay, helping future users evaluate properties. Hosts benefit from feedback to improve their offerings, and properties build trust through transparent scores.
+
+---
+
+### 🔍 Search and Filter Functionality
+Users can search for listings based on location, availability, price range, and other filters. This makes it easy to find the most suitable property quickly and efficiently.
+
+---
+
+### 📱 Responsive Frontend Interface
+The interface is fully responsive, providing an optimal experience across desktop and mobile devices. Smooth UI interactions make the platform intuitive and user-friendly for both guests and hosts.
+
+---
+
+### 🔐 Authentication & Authorization
+Secure login and role-based access control ensure users can only access data and actions appropriate to their roles. This protects user data and maintains platform integrity.
 
 
 
