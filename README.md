@@ -74,6 +74,97 @@ Cloud platforms for deploying and hosting the application. They enable continuou
 ### 🧰 Docker
 Used to containerize the application, ensuring consistency across development and production environments. It simplifies deployment and dependency management.
 
+## 🗃️ Database Design
+
+The Airbnb Clone project requires a well-structured relational database to manage users, properties, bookings, reviews, and payments. Below is an outline of the core entities and how they relate to each other.
+
+---
+
+### 👤 Users
+Represents all registered users, including hosts and guests.
+
+**Key Fields:**
+- `id` (Primary Key)
+- `name`
+- `email`
+- `password_hash`
+- `is_host` (Boolean to indicate if user can list properties)
+
+---
+
+### 🏡 Properties
+Represents property listings created by hosts.
+
+**Key Fields:**
+- `id` (Primary Key)
+- `user_id` (Foreign Key → Users)
+- `title`
+- `description`
+- `location`
+- `price_per_night`
+
+**Relationship:**
+- A **User** can own multiple **Properties**
+
+---
+
+### 📅 Bookings
+Tracks reservation details made by users on properties.
+
+**Key Fields:**
+- `id` (Primary Key)
+- `user_id` (Foreign Key → Users)
+- `property_id` (Foreign Key → Properties)
+- `start_date`
+- `end_date`
+- `total_price`
+
+**Relationship:**
+- A **Booking** is made by a **User**
+- A **Booking** is linked to one **Property**
+
+---
+
+### 📝 Reviews
+Represents user feedback for properties after a stay.
+
+**Key Fields:**
+- `id` (Primary Key)
+- `user_id` (Foreign Key → Users)
+- `property_id` (Foreign Key → Properties)
+- `rating` (1–5 stars)
+- `comment`
+- `created_at`
+
+**Relationship:**
+- A **User** can leave multiple **Reviews**
+- A **Property** can have many **Reviews**
+
+---
+
+### 💳 Payments
+Handles the transaction records for completed bookings.
+
+**Key Fields:**
+- `id` (Primary Key)
+- `booking_id` (Foreign Key → Bookings)
+- `amount`
+- `payment_status` (e.g., paid, failed, refunded)
+- `payment_method`
+
+**Relationship:**
+- A **Payment** is associated with one **Booking**
+
+---
+
+### 📌 Summary of Relationships
+
+- One **User** → Many **Properties**, **Bookings**, **Reviews**
+- One **Property** → Many **Bookings**, **Reviews**
+- One **Booking** → One **Payment**
+
+
+
 
 
 
