@@ -262,6 +262,35 @@ Minimizes liability and ensures the safety of financial data during transactions
 
 
 
+## ⚙️ CI/CD Pipeline
+
+### What is CI/CD?
+
+CI/CD stands for **Continuous Integration** and **Continuous Deployment/Delivery**. It is a development practice where code changes are automatically tested, built, and deployed to production or staging environments. This ensures faster development cycles, higher code quality, and fewer bugs reaching end-users.
+
+---
+
+### Why CI/CD is Important for This Project
+
+For a full-stack platform like the Airbnb Clone, CI/CD pipelines help automate the software delivery process. Every time a developer pushes code to the repository:
+- Tests are automatically run to catch bugs early.
+- Builds are created and deployed to staging environments.
+- Deployment processes are repeatable and consistent.
+
+This reduces manual errors, improves developer efficiency, and ensures new features and fixes reach users more quickly and safely.
+
+---
+
+### Tools Used for CI/CD
+
+- **GitHub Actions**: Automates workflows like running tests, building the app, and deploying to hosting platforms when code is pushed or pull requests are merged.
+- **Docker**: Containerizes the application to ensure it runs consistently across development, testing, and production environments.
+- **Heroku / Render**: Used for automated deployments and hosting.
+- **PostgreSQL Service Containers**: Used in testing environments for backend and database integration testing.
+
+---
+
+CI/CD is a vital part of delivering a modern, scalable, and stable web application like our Airbnb Clone.
 
 
 
